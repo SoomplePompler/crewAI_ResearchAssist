@@ -1,0 +1,19 @@
+﻿llm:
+  provider: ollama
+  config:
+    model: "llama3.2"  
+    base_url: 'http://localhost:11434'
+    
+embedder:
+  provider: ollama 
+  config:
+    model: "mxbai-embed-large"  # The embedding model you want to use
+    
+
+vectordb:
+  provider: chroma
+  config:
+    collection_name: 'docs'
+    host: localhost
+    port: 8000
+    allow_reset: true
